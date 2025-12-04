@@ -1,34 +1,77 @@
-# Wave-Height-Prediction-Using-Linear-Regression-and-Random-Forest
-O objetivo é construir um modelo rápido, interpretável e que demonstre domínio de aprendizado automático aplicado ao mar.
+📘 Overview
 
-1. Introdução
+This mini-project uses Machine Learning to predict ocean wave height based on atmospheric and oceanographic variables such as wind speed, wind direction, fetch, and atmospheric pressure.
 
-A previsão de ondas é fundamental para navegação, operações navais, segurança de embarcações e planejamento costeiro. Embora modelos numéricos como o WaveWatch III (WW3) sejam amplamente utilizados, modelos simples de aprendizado de máquina também podem capturar relações básicas entre variáveis atmosféricas e a altura significativa de onda.
+The objective is to demonstrate how simple ML models can capture fundamental physical relationships in the marine environment—similar to how numerical models (like WaveWatch III – WW3) operate, but in a much faster and more interpretable way.
 
-Este mini-projeto usa um dataset sintético, porém realista, para treinar modelos que estimam a altura da onda com base em:
+This project was designed to be:
 
-velocidade do vento (m/s)
+Quick to build (completed in one day)
 
-direção do vento (graus)
+Scientifically grounded
 
-fetch (km) — distância sobre a qual o vento sopra
+Perfect for academic reports and portfolios
 
-pressão atmosférica (hPa)
+Relevant to naval operations and marine forecasting
 
-O objetivo é construir um modelo rápido, interpretável e que demonstre domínio de aprendizado automático aplicado ao mar.
+🎯 Project Goals
 
-2. Metodologia
+Build a synthetic but physically realistic dataset representing ocean conditions
 
-Gerar dataset sintético inspirado em relações físicas conhecidas.
+Train two regression models:
 
-Separar treino e teste (80/20).
-
-Treinar dois modelos:
-
-Regressão Linear
+Linear Regression
 
 Random Forest Regressor
 
-Avaliar com RMSE e R².
+Compare their performance
 
-Plotar valores reais vs previstos.
+Visualize real vs. predicted wave heights
+
+Demonstrate a practical ML workflow applied to the ocean domain
+
+🌬️ Dataset Description
+
+The dataset is generated synthetically using realistic ranges:
+
+Variable	Description	Range
+vento_vel	Wind speed (m/s)	2 – 25
+vento_dir	Wind direction (degrees)	0 – 360
+fetch	Distance wind blows over the water	5 – 300 km
+pressao	Atmospheric pressure (hPa)	990 – 1030
+altura_onda	Target: wave height (m)	generated
+
+The wave height formula includes:
+
+positive influence of wind speed
+
+positive influence of fetch
+
+slight negative influence of high pressure
+
+random noise to mimic natural ocean variability
+
+🧠 Methodology
+
+Generate a synthetic oceanographic dataset
+
+Split into training (80%) and testing (20%)
+
+Train:
+
+Linear Regression
+
+Random Forest Regressor
+
+Evaluate using:
+
+RMSE
+
+R² score
+
+Plot predictions vs. true values
+
+
+RMSE
+
+R² score
